@@ -6,28 +6,27 @@
 package com.electiva.chat.controller;
 
 import com.electiva.chat.model.Message;
+import com.electiva.chat.model.MessageOutput;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author user
+ * @author gino_junchaya
  */
-
-@RestController
 @CrossOrigin(origins = "*")
-public class Test {
+@Controller
+public class GrettingController {
 
-    @GetMapping("/test")
-    public ResponseEntity<?> test(){
-        return new ResponseEntity("Servidor Funcionando", HttpStatus.OK);
+    @CrossOrigin
+    @MessageMapping("/chat")
+    @SendTo("/topic/messages")
+    public MessageOutput greeting(Message message) throws Exception {
+        String time = new SimpleDateFormat("HH:mm").format(new Date());
+        return new MessageOutput(message.getFrom(), message.getText(), time);
     }
-    
 }
