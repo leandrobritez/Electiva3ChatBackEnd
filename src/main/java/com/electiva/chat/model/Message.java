@@ -5,28 +5,27 @@
  */
 package com.electiva.chat.model;
 
+import java.util.Date;
+
 /**
  *
  * @author gino_junchaya
  */
+
 public class Message {
-    private String from;
-    private String text;
+    
+    private String mensaje;
+    private Integer emisorId;
+    private Integer receptorId;
+    private Date fecha;
 
-    public String getFrom() {
-        return from;
-    }
-
-    public void setFrom(String from) {
-        this.from = from;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
+    public String getMensaje() {return mensaje;}
+    public void setMensaje(String mensaje) {this.mensaje = mensaje;}
+    public Integer getEmisorId() {return emisorId;}
+    public void setEmisorId(Integer emisorId) {this.emisorId = emisorId;}
+    public Integer getReceptorId() {return receptorId;}
+    public void setReceptorId(Integer receptorId) {this.receptorId = receptorId;}
+    public Date getFecha() {return fecha;}
+    public void setFecha(Date fecha) {this.fecha = fecha;}
+    
 }
