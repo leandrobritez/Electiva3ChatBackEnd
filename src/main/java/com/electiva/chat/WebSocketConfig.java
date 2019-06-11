@@ -13,7 +13,7 @@ import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerCo
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 
 @Configuration
