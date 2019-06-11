@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 
 @RestController

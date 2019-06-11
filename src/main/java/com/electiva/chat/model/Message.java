@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 
 public class Message {

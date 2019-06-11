@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 
 @Repository

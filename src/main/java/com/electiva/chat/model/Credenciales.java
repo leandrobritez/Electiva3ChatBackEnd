@@ -7,7 +7,7 @@ package com.electiva.chat.model;
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 public class Credenciales {
     

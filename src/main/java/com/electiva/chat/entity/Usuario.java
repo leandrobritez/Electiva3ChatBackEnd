@@ -24,7 +24,7 @@ import javax.validation.constraints.Size;
 
 /**
  *
- * @author gino_junchaya
+ * @author leandrobritez
  */
 
 @Entity
